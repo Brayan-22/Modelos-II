@@ -1,26 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package launcherPrueba2;
 
-import figurasGraficas.Vista;
+import presentacion.Modelo;
 
-
-
-/**
- *
- * @author alejandro
- */
 public class launcher {
-    private Vista miApp;
+    private Modelo miApp;
     public launcher(){
-        miApp= new Vista();
-        miApp.setVisible(true);
+        miApp = new Modelo();
+        miApp.iniciarApp();
     }
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         new launcher();
     }
